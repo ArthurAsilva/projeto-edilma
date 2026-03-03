@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato conosco.">
+    <title>Contato - País de Gales: Tradição e Sabor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-emoji">🐉</span>
+                <div class="logo-text">
+                    <h1 class="logo-title" data-i18n="nav.title">País de Gales</h1>
+                    <p class="logo-subtitle" data-i18n="nav.subtitle">Tradição e Sabor</p>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link" data-i18n="nav.home">Início</a>
+                <a href="sobre.html" class="nav-link" data-i18n="nav.about">Sobre</a>
+                <a href="receitas.html" class="nav-link" data-i18n="nav.recipes">Receitas</a>
+                <a href="galeria.html" class="nav-link" data-i18n="nav.gallery">Galeria</a>
+                <a href="contato.html" class="nav-link" data-i18n="nav.contact">Contato</a>
+            </nav>
+
+            <button class="language-toggle" id="languageToggle">
+                <span id="langText">EN</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-i18n="pages.contact.title">Entre em Contato</h1>
+                <p class="page-subtitle" data-i18n="pages.contact.subtitle">Fale Conosco</p>
+            </div>
+        </section>
+
+        <!-- Page Content -->
+        <section class="page-content">
+            <div class="container">
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <!-- Contact Form -->
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label" data-i18n="pages.contact.name">Nome</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label" data-i18n="pages.contact.email">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label" data-i18n="pages.contact.phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Assunto</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label" data-i18n="pages.contact.message">Mensagem</label>
+                            <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        </div>
+
+                        <button type="submit" class="form-button" data-i18n="pages.contact.send">Enviar</button>
+                    </form>
+
+                    <!-- Contact Info -->
+                    <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--secondary);">
+                        <h2 class="content-title">Informações de Contato</h2>
+                        
+                        <div style="display: grid; gap: 2rem; margin-top: 2rem;">
+                            <div>
+                                <h3 style="font-weight: 700; margin-bottom: 0.5rem;">📍 Endereço</h3>
+                                <p style="color: var(--muted-foreground);">País de Gales<br>Reino Unido</p>
+                            </div>
+
+                            <div>
+                                <h3 style="font-weight: 700; margin-bottom: 0.5rem;">📞 Telefone</h3>
+                                <p style="color: var(--muted-foreground);">+44 (0) 1234 567890</p>
+                            </div>
+
+                            <div>
+                                <h3 style="font-weight: 700; margin-bottom: 0.5rem;">✉️ Email</h3>
+                                <p style="color: var(--muted-foreground);"><a href="mailto:info@paisdeales.com" style="color: var(--primary); text-decoration: none;">info@paisdeales.com</a></p>
+                            </div>
+
+                            <div>
+                                <h3 style="font-weight: 700; margin-bottom: 0.5rem;">🕐 Horário de Atendimento</h3>
+                                <p style="color: var(--muted-foreground);">Segunda a Sexta: 9:00 - 18:00<br>Sábado: 10:00 - 16:00<br>Domingo: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-title" data-i18n="footer.title">País de Gales</h3>
+                    <p class="footer-text" data-i18n="footer.text">Explorando a rica tradição culinária galesa, onde história, cultura e sabor se encontram em cada prato.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">📷</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle" data-i18n="footer.quick_links">LINKS RÁPIDOS</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-i18n="nav.home">Início</a></li>
+                        <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+                        <li><a href="receitas.html" data-i18n="nav.recipes">Receitas</a></li>
+                        <li><a href="galeria.html" data-i18n="nav.gallery">Galeria</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle" data-i18n="footer.contact">CONTATO</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span data-i18n="footer.location">País de Gales, Reino Unido</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <a href="mailto:info@paisdeales.com">info@paisdeales.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>+44 (0) 1234 567890</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 País de Gales: Tradição e Sabor. Todos os direitos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" data-i18n="footer.privacy">Privacidade</a>
+                    <a href="#" data-i18n="footer.terms">Termos</a>
+                    <a href="#" data-i18n="footer.cookies">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="contact.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
